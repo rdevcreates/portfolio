@@ -11,12 +11,12 @@ export default function ProfileImage() {
     >
       <div className="relative w-[250px] h-[250px] rounded-full bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 p-2 shadow-lg">
         <Image
-          src="/assets/image/profile.jpeg"
+          src="/assets/image/profile.png"
           width={250}
           height={250}
           alt="Profile Picture"
           className="rounded-full border-4 border-white/20 shadow-lg"
-          priority={false} // Tidak perlu selalu memuat gambar lebih awal
+          priority={false}
         />
       </div>
     </motion.div>
