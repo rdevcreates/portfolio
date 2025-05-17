@@ -38,7 +38,7 @@ export default function HomeSection() {
   // Data sosial dengan handling khusus untuk email (mailto)
   const socialLinks = [
     {
-      href: "https://www.linkedin.com/in/rudiyat-rudiyat",
+      href: "https://www.linkedin.com/in/rudiyat-rudiyat-2a9490339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       icon: Linkedin,
       label: "LinkedIn",
     },
