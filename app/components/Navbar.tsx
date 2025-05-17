@@ -15,7 +15,7 @@ const navItems = [
   { href: "#skills", icon: <FolderDot size={24} />, label: "Skills" },
   { href: "#projects", icon: <FolderOpen size={24} />, label: "Projects" },
   { href: "#services", icon: <HandPlatter size={24} />, label: "Services" },
-  { href: "#contact", icon: <Contact size={24} />, label: "Contact" },
+  // { href: "#contact", icon: <Contact size={24} />, label: "Contact" },
 ];
 
 const Navbar = () => {

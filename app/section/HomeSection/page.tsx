@@ -35,6 +35,30 @@ export default function HomeSection() {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, loopIndex]);
 
+  // Data sosial dengan handling khusus untuk email (mailto)
+  const socialLinks = [
+    {
+      href: "https://www.linkedin.com/in/rudiyat-rudiyat",
+      icon: Linkedin,
+      label: "LinkedIn",
+    },
+    {
+      href: "https://www.instagram.com/rdevcreates",
+      icon: Instagram,
+      label: "Instagram",
+    },
+    {
+      href: "mailto:rudiyat.ti@gmail.com",
+      icon: Mail,
+      label: "Email",
+    },
+    {
+      href: "https://github.com/pddccvv",
+      icon: Github,
+      label: "GitHub",
+    },
+  ];
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-6"
@@ -63,40 +87,40 @@ export default function HomeSection() {
             <span className="animate-blink">|</span>
           </p>
 
-          <div className="flex justify-center md:justify-start gap-4 mt-4">
-            {[
-              {
-                href: "https://www.linkedin.com/in/yourprofile",
-                icon: Linkedin,
-              },
-              {
-                href: "https://www.instagram.com/yourprofile",
-                icon: Instagram,
-              },
-              { href: "mailto:your.email@example.com", icon: Mail },
-              { href: "https://github.com/yourgithub", icon: Github },
-            ].map(({ href, icon: Icon }, index) => (
+          <div className="flex justify-center md:justify-start gap-5 mt-5">
+            {socialLinks.map(({ href, icon: Icon, label }, index) => (
               <motion.a
                 key={index}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.2 }}
+                aria-label={label}
+                whileHover={{
+                  scale: 1.15,
+                  boxShadow:
+                    "0 4px 15px rgba(239, 68, 68, 0.6), 0 0 10px rgba(239, 68, 68, 0.8)",
+                }}
                 transition={{ type: "spring", stiffness: 200 }}
-                className="p-3 bg-white/10 border border-white/20 rounded-full shadow-lg hover:bg-white/20 transition-all duration-300"
+                className="relative p-3 bg-white/10 border border-white/30 rounded-full shadow-lg backdrop-blur-md hover:bg-white/20 transition-all duration-300"
               >
-                <Icon size={24} className="text-white" />
+                <Icon size={26} className="text-white" />
+                <span className="sr-only">{label}</span>
               </motion.a>
             ))}
           </div>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
+          <motion.a
+            href="mailto:rudiyat.ti@gmail.com"
+            whileHover={{
+              scale: 1.05,
+              boxShadow:
+                "0 0 15px 2px rgba(239, 68, 68, 0.7), 0 0 30px rgba(239, 68, 68, 0.4)",
+            }}
             transition={{ type: "spring", stiffness: 200 }}
-            className="mt-6 px-6 py-3 text-lg font-semibold text-white bg-red-500 rounded-lg shadow-lg hover:bg-red-600 transition-all duration-300"
+            className="mt-8 inline-block px-8 py-3 text-lg font-semibold text-white bg-red-500 rounded-lg shadow-lg backdrop-blur-md hover:bg-red-600 transition-all duration-300 cursor-pointer"
           >
             Hire Me
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <ProfileImage />

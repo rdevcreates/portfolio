@@ -20,9 +20,9 @@ export default function Home() {
       <section id="services">
         <ServiceSection />
       </section>
-      <section id="contact">
+      {/* <section id="contact">
         <ContactSection />
-      </section>
+      </section> */}
     </div>
   );
 }

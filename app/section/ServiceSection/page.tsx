@@ -1,39 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Server, Layout, Database, Link } from "lucide-react";
+import {
+  FileText,
+  Briefcase,
+  Building,
+  Globe,
+  Laptop2,
+} from "lucide-react";
 
 export default function ServiceSection() {
   const services = [
     {
-      title: "Web Development",
+      title: "Pembuatan Website Instansi & UMKM",
       description:
-        "Membangun website responsif dan interaktif dengan teknologi modern.",
-      icon: Code,
+        "Melayani pembuatan website untuk pemerintahan, sekolah, desa, dan usaha bisnis Anda.",
+      icon: Globe,
     },
     {
-      title: "Full-Stack Development",
+      title: "Pembuatan Sistem Informasi",
       description:
-        "Mengembangkan frontend & backend dengan integrasi yang seamless.",
-      icon: Server,
+        "Membuat aplikasi web seperti sistem manajemen sekolah, kasir, keuangan, absensi, dan lainnya.",
+      icon: Laptop2,
     },
     {
-      title: "UI/UX Design",
+      title: "Jasa Joki Tugas & Skripsi",
       description:
-        "Merancang tampilan antarmuka yang menarik dan user-friendly.",
-      icon: Layout,
+        "Membantu pengerjaan skripsi, tugas akhir, tugas kuliah berbasis web",
+      icon: FileText,
     },
-    {
-      title: "Database Management",
-      description:
-        "Mengelola dan mengoptimalkan database untuk performa terbaik.",
-      icon: Database,
-    },
-    {
-      title: "API Development",
-      description: "Membuat API yang cepat dan aman untuk kebutuhan aplikasi.",
-      icon: Link,
-    },
+  
   ];
 
   return (
@@ -50,7 +46,7 @@ export default function ServiceSection() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="relative z-10 text-4xl font-extrabold text-white mb-10 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text"
       >
-        My Services
+        Layanan Kami
       </motion.h2>
 
       <motion.div
