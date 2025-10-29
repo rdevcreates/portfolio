@@ -23,12 +23,12 @@ const services = [
     color: "text-green-400",
   },
   {
-    title: "Jasa Joki Tugas & Skripsi",
-    description:
-      "Membantu pengerjaan skripsi, tugas akhir, tugas kuliah berbasis web.",
-    icon: FileText,
-    color: "text-pink-400",
-  },
+  title: "Konsultasi & Pengembangan Proyek Web Akademik",
+  description:
+    "Memberikan bantuan teknis dalam pengembangan sistem web untuk tugas akhir atau proyek penelitian menggunakan framework modern.",
+  icon: FileText,
+  color: "text-pink-400",
+}
 ];
 
 export default function ServiceSection() {
