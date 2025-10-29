@@ -21,14 +21,15 @@ const services = [
       "Membuat aplikasi web seperti sistem manajemen sekolah, kasir, keuangan, absensi, dan lainnya.",
     icon: Laptop2,
     color: "text-green-400",
-  },
-  {
+  }
+  
+ // {
   title: "Konsultasi & Pengembangan Proyek Web Akademik",
   description:
     "Memberikan bantuan teknis dalam pengembangan sistem web untuk tugas akhir atau proyek penelitian menggunakan framework modern.",
   icon: FileText,
   color: "text-pink-400",
-}
+}//
 ];
 
 export default function ServiceSection() {
